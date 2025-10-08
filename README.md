@@ -1,6 +1,6 @@
-Soft Body Simulation (Modern OpenGL)
+# Soft Body Simulation (Modern OpenGL)
 
-A simple real-time soft-body physics simulation built using C++, GLFW, and GLAD.
+A simple real-time **soft-body physics simulation** built using C++, GLFW, and GLAD.
 The simulation models a grid of particles connected by springs, forming a deformable object that reacts to gravity and collisions.
 
 
