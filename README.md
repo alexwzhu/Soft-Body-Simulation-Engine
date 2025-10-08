@@ -10,7 +10,7 @@ The program simulates a deformable grid of particles connected by springs, demon
 - Pinned anchor points to fix edges or corners
 - Rendered with Modern OpenGL
 - Real-time simulation loop using GLFW
-- 
+  
 ## Dependencies
 - [GLFW](https://www.glfw.org/) — window and input handling  
 - [GLAD](https://glad.dav1d.de/) — OpenGL function loader  
