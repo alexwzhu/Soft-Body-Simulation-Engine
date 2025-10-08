@@ -10,8 +10,7 @@ The program simulates a deformable grid of particles connected by springs, demon
 - Soft-body physics using a **mass-spring system**
 - **Gravity** and basic **collision** detection
 - Pinned anchor points** to fix edges or corners
-- Rendered with **Modern OpenGL (3.3 Core Profile)**
-- Minimal shader-based rendering (points + lines)
+- Rendered with **Modern OpenGL**
 - Real-time simulation loop using **GLFW**
 
 ## Dependencies
