@@ -1,18 +1,31 @@
-# Soft Body Simulation (Modern OpenGL)
-A simple real-time **soft-body physics simulation** built with _C++_, _GLFW_, and _GLAD_.  
-The program simulates a deformable grid of particles connected by springs, demonstrating basic soft-body physics and rendering via _Modern OpenGL_.
+# Soft Body Simulation
+
+A real-time soft-body physics simulation built with C++, GLFW, and OpenGL.
 
 <img width="370" height="400" alt="Screen Shot 2025-09-16 at 6 29 16 PM" src="https://github.com/user-attachments/assets/38bfbb30-3cf2-447b-b1d4-44fdd4e302a3" />
 
-## Features
-- Soft-body physics using a mass-spring system
-- Gravity and basic collision detection
-- Pinned anchor points to fix edges or corners
-- Rendered with _Modern OpenGL_
-- Real-time simulation loop using _GLFW_
-  
-## Dependencies
-- [GLFW](https://www.glfw.org/) — window and input handling  
-- [GLAD](https://glad.dav1d.de/) — OpenGL function loader  
-- [OpenGL 3.3+](https://www.opengl.org/) — rendering backend  
+## What it does
 
+Simulates a 6x6 grid of particles connected by springs. The top two corners are pinned in place while the rest of the cloth falls under gravity, stretches, and bounces off the floor. Particles are rendered as blue dots, springs as white lines.
+
+## Dependencies
+
+- [GLFW](https://www.glfw.org/) — window and input handling
+- [GLAD](https://glad.dav1d.de/) — OpenGL function loader
+- OpenGL 3.3+
+
+## Building and running
+
+Make sure GLFW and GLAD are available, then compile with:
+
+```bash
+g++ main.cpp glad.c -o app -lglfw -framework OpenGL
+```
+
+Then run:
+
+```bash
+./app
+```
+
+Close the window to exit.
