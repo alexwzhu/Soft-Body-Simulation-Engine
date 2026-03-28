@@ -6,7 +6,7 @@ A real-time soft-body physics simulation built with C++, GLFW, and OpenGL.
 
 ## What it does
 
-Simulates a 6x6 grid of particles connected by springs. The top two corners are pinned in place while the rest of the cloth falls under gravity, stretches, and bounces off the floor. Particles are rendered as blue dots, springs as white lines.
+Simulates a 6x6 grid of particles connected by springs. The top two corners are pinned in place while the rest of the cloth falls under gravity, stretches, and oscillates. Particles are rendered as blue dots, springs as white lines.
 
 ## Dependencies
 
