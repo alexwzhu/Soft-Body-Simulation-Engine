@@ -10,16 +10,21 @@ Simulates a 6x6 grid of particles connected by springs. The top two corners are 
 
 ## Dependencies
 
-- [GLFW](https://www.glfw.org/) — window and input handling
-- [GLAD](https://glad.dav1d.de/) — OpenGL function loader
-- OpenGL 3.3+
+All dependencies are bundled in the repo — no installs needed.
+
+- GLFW 3.4 (dylib + headers in `dependencies/`)
+- GLAD (OpenGL 3.3 core loader — `glad.c` + `dependencies/include/glad/`)
+- OpenGL 3.3+ (provided by macOS)
+
+> **Note:** Currently macOS only due to the bundled `.dylib` and `-framework OpenGL`.
 
 ## Building and running
 
-Make sure GLFW and GLAD are available, then compile with:
+After cloning, compile from the project root:
 
 ```bash
-g++ main.cpp glad.c -o app -lglfw -framework OpenGL
+gcc -c glad.c -I dependencies/include -o glad.o
+g++ main.cpp glad.o -o app -I dependencies/include -L dependencies/library -lglfw.3.4 -framework OpenGL -Wl,-rpath,@executable_path/dependencies/library
 ```
 
 Then run:
