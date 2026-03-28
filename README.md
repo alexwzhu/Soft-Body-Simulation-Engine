@@ -16,8 +16,6 @@ All dependencies are bundled in the repo — no installs needed.
 - GLAD (OpenGL 3.3 core loader — `glad.c` + `dependencies/include/glad/`)
 - OpenGL 3.3+ (provided by macOS)
 
-> **Note:** Currently macOS only due to the bundled `.dylib` and `-framework OpenGL`.
-
 ## Building and running
 
 After cloning, compile from the project root:
